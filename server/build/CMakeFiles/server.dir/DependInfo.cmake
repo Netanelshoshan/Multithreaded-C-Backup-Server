@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/Users/netanel/Documents/cs/Defensive-System-Programming/assignments/ex14/Multithreaded-C-Backup-Server/server/main.cpp" "CMakeFiles/server.dir/main.cpp.o" "gcc" "CMakeFiles/server.dir/main.cpp.o.d"
+  "/Users/netanel/Documents/cs/Defensive-System-Programming/assignments/ex14/Multithreaded-CPP-Backup-Server/server/main.cpp" "CMakeFiles/server.dir/main.cpp.o" "gcc" "CMakeFiles/server.dir/main.cpp.o.d"
   )
 
 # Targets to which this target links.

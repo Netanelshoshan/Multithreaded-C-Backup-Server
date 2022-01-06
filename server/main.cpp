@@ -572,22 +572,23 @@ void clear_buffer(uint8_t *buf, uint32_t length) {
 }
 
 int main(int argc, char *argv[]) {
-    std::ifstream file;
+    boost::filesystem::ifstream file;
     boost::filesystem::path path(boost::filesystem::current_path());
+    const std::string port = "port.info";
+    std::string portNum = "";
     try {
-
-        if (argc != 2) {
-            std::cerr << "Usage: server <port>\n";
-            return 1;
-        }
-        std::cout << "Starting Backup Server" << std::endl;
-
+        if (!boost::filesystem::exists(port))
+            throw std::runtime_error("port.info doesn't exist.");
+        path.append(port);
+        file.open(path, std::ios::out);
+        if (!file)
+            throw std::runtime_error("Can't open file" + port);
         boost::asio::io_context io_context;
-        server(io_context, std::atoi(argv[1]));
-    }
-    catch (std::exception &e) {
+        getline(file, portNum);
+        std::cout << "Starting Backup Server" << std::endl;
+        server(io_context, std::stoi(portNum));
+    } catch (std::exception &e) {
         std::cerr << "Exception in main: " << e.what() << "\n";
     }
-
     return 0;
 }

@@ -590,5 +590,23 @@ int main(int argc, char *argv[]) {
     } catch (std::exception &e) {
         std::cerr << "Exception in main: " << e.what() << "\n";
     }
+
+    /*
+     try {
+
+        if (argc != 2) {
+            std::cerr << "Usage: server <port>\n";
+            return 1;
+        }
+        std::cout << "Starting Backup Server" << std::endl;
+
+        boost::asio::io_context io_context;
+        server(io_context, std::atoi(argv[1]));
+    }
+    catch (std::exception &e) {
+        std::cerr << "Exception in main: " << e.what() << "\n";
+    }
+*/
+
     return 0;
 }

@@ -1,0 +1,77 @@
+(base) 🌐 >./server 
+Starting Backup Server
+
+
+Waiting to accept client connection
+Accepted 
+
+
+
+Waiting to accept client connection
+user id: 1111
+Getting list of backed up for : 1111
+Error opening client's directory
+Session ended with status: 1002
+Accepted 
+
+
+
+Waiting to accept client connection
+user id: 1111
+Backing up: m14.pdf
+path: "/Users/netanel/Documents/cs/Defensive-System-Programming/assignments/ex14/Multithreaded-CPP-Backup-Server/server/1111"
+Attempting to create file at path: "/Users/netanel/Documents/cs/Defensive-System-Programming/assignments/ex14/Multithreaded-CPP-Backup-Server/server/1111/m14.pdf"
+Read 542336 bytes
+Session ended with status: 212
+Accepted 
+
+
+
+Waiting to accept client connection
+user id: 1111
+Backing up: Ai.pdf
+path: "/Users/netanel/Documents/cs/Defensive-System-Programming/assignments/ex14/Multithreaded-CPP-Backup-Server/server/1111"
+Attempting to create file at path: "/Users/netanel/Documents/cs/Defensive-System-Programming/assignments/ex14/Multithreaded-CPP-Backup-Server/server/1111/Ai.pdf"
+Read 1369152 bytes
+Session ended with status: 212
+Accepted 
+
+
+
+Waiting to accept client connection
+user id: 1111
+Getting list of backed up for : 1111
+
+m14.pdf
+Ai.pdf
+
+Sending dir list file:             Vu2S1izKHhU8HLtPq6UWDa52Md0BcdS7.txt
+Sent 13 bytes
+Session ended with status: 211
+Accepted 
+
+
+
+Waiting to accept client connection
+user id: 1111
+Retrieving file from backup: m14.pdf
+Retrieving file: m14.pdf
+Sent 542336 bytes
+Session ended with status: 210
+Accepted 
+
+
+
+Waiting to accept client connection
+user id: 1111
+Erasing file from backup: m14.pdf
+Session ended with status: 212
+Accepted 
+
+
+
+Waiting to accept client connection
+user id: 1111
+Retrieving file from backup: m14.pdf
+Client's file does not exist
+Session ended with status: 1001

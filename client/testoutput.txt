@@ -1,0 +1,68 @@
+(base) 🌵 >python3 client.py 
+
+Client id: 1111
+Server info 127.0.0.1:8443
+Requesting list of backed up files..
+Connecting to server 127.0.0.1:8443
+Server's response code: NO_CONTENT
+Error while trying to get the list of files. NO_CONTENT
+Closing connection
+
+Client id: 1111
+Server info 127.0.0.1:8443
+Backing up: m14.pdf
+Sending file in size of: 542336 bytes
+Connecting to server 127.0.0.1:8443
+Uploading file..
+File uploaded successfully.
+Server's response code: BACKUP_OR_DEL_FILE_SUC
+Closing connection
+
+Client id: 1111
+Server info 127.0.0.1:8443
+Backing up: Ai.pdf
+Sending file in size of: 1369152 bytes
+Connecting to server 127.0.0.1:8443
+Uploading file..
+File uploaded successfully.
+Server's response code: BACKUP_OR_DEL_FILE_SUC
+Closing connection
+
+Client id: 1111
+Server info 127.0.0.1:8443
+Requesting list of backed up files..
+Connecting to server 127.0.0.1:8443
+Server's response code: GET_LIST_SUC
+Receiving the list of backed up files, name=b'Vu2S1izKHhU8HLtPq6UWDa52Md0BcdS7.txt', size=2:
+m14.pdf
+Ai.pdf
+
+
+Closing connection
+
+Client id: 1111
+Server info 127.0.0.1:8443
+Requesting: m14.pdf from the server..
+The downloaded file be saved as: tmp
+Connecting to server 127.0.0.1:8443
+Server's response code: GET_FILE_SUC
+Downloading file in size of: 542336 bytes
+File downloaded successfully.
+Received file in size of: 542336 bytes
+Closing connection
+
+Client id: 1111
+Server info 127.0.0.1:8443
+Requesting to erase : m14.pdf
+Connecting to server 127.0.0.1:8443
+Server's response code: BACKUP_OR_DEL_FILE_SUC
+Closing connection
+
+Client id: 1111
+Server info 127.0.0.1:8443
+Requesting: m14.pdf from the server..
+The downloaded file be saved as: tmp2
+Connecting to server 127.0.0.1:8443
+Server's response code: FILE_NOT_FOUND
+Can't get the file. FILE_NOT_FOUND
+Closing connection

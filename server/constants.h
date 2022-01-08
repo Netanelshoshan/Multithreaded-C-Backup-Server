@@ -30,13 +30,5 @@
 #define NO_CONTENT 1002
 #define INTERNAL_ERROR 1003
 
-
-
-/* the path to the parent directory that holds backup directories for all the clients */
-/* this path is within the directory of the server.exe */
-#define SERVER_BACKUP_PARENT_DIR ("C:\\backup_svr\\")
-
-
-
 #endif /* server.h */
 

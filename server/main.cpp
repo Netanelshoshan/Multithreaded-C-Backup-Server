@@ -26,6 +26,7 @@ void session(tcp::socket sock) {
     auto *response = new Response;
 
     try {
+        // read some data (header)
         sock.read_some(boost::asio::buffer(data), error);
 
         /* insert data into header fields */
@@ -565,7 +566,7 @@ void server(boost::asio::io_context &io_context, unsigned short port) {
     }
 }
 
-
+/* clears the buffer */
 void clear_buffer(uint8_t *buf, uint32_t length) {
     for (uint32_t i = 0; i < length; i++)
         buf[i] = 0;
@@ -576,6 +577,7 @@ int main(int argc, char *argv[]) {
     boost::filesystem::path path(boost::filesystem::current_path());
     const std::string port = "port.info";
     std::string portNum = "";
+    // Try and search for the port.info file
     try {
         if (!boost::filesystem::exists(port))
             throw std::runtime_error("port.info doesn't exist.");
@@ -590,23 +592,5 @@ int main(int argc, char *argv[]) {
     } catch (std::exception &e) {
         std::cerr << "Exception in main: " << e.what() << "\n";
     }
-
-    /*
-     try {
-
-        if (argc != 2) {
-            std::cerr << "Usage: server <port>\n";
-            return 1;
-        }
-        std::cout << "Starting Backup Server" << std::endl;
-
-        boost::asio::io_context io_context;
-        server(io_context, std::atoi(argv[1]));
-    }
-    catch (std::exception &e) {
-        std::cerr << "Exception in main: " << e.what() << "\n";
-    }
-*/
-
     return 0;
 }

@@ -270,7 +270,7 @@ class clientSoc:
         # if the server can't get us the file, print the status code
         if self.status != return_codes['GET_FILE_SUC']:
             print(f'Can\'t get the file. {reply_status(self.status)}')
-            os.remove(os.path.abspath(fd.name))
+            #os.remove(os.path.abspath(fd.name))
             fd.close()
             self.sock.shutdown(socket.SHUT_WR)
             self.close()

@@ -8,4 +8,4 @@ You can either run the Makefile or just type:\
 cmake -S. -B build\
 cmake --build build\
 cd build\
-./server\
+./server

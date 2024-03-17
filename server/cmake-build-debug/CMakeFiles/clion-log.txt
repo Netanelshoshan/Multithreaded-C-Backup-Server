@@ -1,0 +1,20 @@
+"/Users/netanel/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/222.3345.126/CLion.app/Contents/bin/cmake/mac/bin/cmake" -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" -S /Users/netanel/Documents/cs/Defensive-System-Programming/Multithreaded-CPP-Backup-Server/server -B /Users/netanel/Documents/cs/Defensive-System-Programming/Multithreaded-CPP-Backup-Server/server/cmake-build-debug
+-- The C compiler identification is AppleClang 14.0.0.14000029
+-- The CXX compiler identification is AppleClang 14.0.0.14000029
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /Library/Developer/CommandLineTools/usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /Library/Developer/CommandLineTools/usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found Boost: /opt/homebrew/lib/cmake/Boost-1.79.0/BoostConfig.cmake (found suitable version "1.79.0", minimum required is "1.76.0") found components: random system filesystem 
+-- Boost_INCLUDE_DIRS: /opt/homebrew/include
+-- Boost_LIBRARIES: Boost::random;Boost::system;Boost::filesystem
+-- Boost_VERSION: 1.79.0
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /Users/netanel/Documents/cs/Defensive-System-Programming/Multithreaded-CPP-Backup-Server/server/cmake-build-debug
